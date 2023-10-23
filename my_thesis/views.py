@@ -9,3 +9,6 @@ def home(request):
 def todos(request):
     data = TodoItem.objects.all()
     return render(request,"todos.html", {"todos": data})
+
+def SignIn(request):
+    return render(request,"SignIn.html")
