@@ -3,8 +3,8 @@ from .models import TodoItem
 
 # Create your views here.
 
-def home(request):
-    return render(request, "home.html")
+def Home(request):
+    return render(request, "Home.html")
 
 def todos(request):
     data = TodoItem.objects.all()
@@ -12,3 +12,6 @@ def todos(request):
 
 def SignIn(request):
     return render(request,"SignIn.html")
+
+def SignUp(request):
+    return render(request,"SignUp.html")
