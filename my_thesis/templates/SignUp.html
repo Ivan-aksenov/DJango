@@ -1,0 +1,40 @@
+{% extends "base.html" %}{% block title%} Sign Up {% endblock  %}
+
+{% block head %} {% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="text-center">
+    <img src="{% static 'my_thesis/images/LogoHydroFlow.svg' %}" alt="HydroFlow Logo" width="400" height="300">
+</div>
+<p> Sign in with your HydroFlow account </p>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-5 position-relative">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" required>
+                  </div>
+                  <div class="col-5 position-relative">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name" required>
+                  </div>
+                  <div class="position-relative">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address" required>
+                  </div>
+                  <div class="position-relative">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Password" required>
+                  </div>
+                  <div class="position-relative">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Confirm Password" required>
+                  </div>
+                  <p>By clicking Sign Up, you agree to our<a href="#" class="link-primary link-offset-2 link-underline link-underline-opacity-0"> Terms and conditions</a></p>
+                  <a class="btn btn-primary" href="#" role="button">Sign Up</a>
+                  <p><a href="{% url 'SignIn' %}" class="link-primary link-offset-2 link-underline link-underline-opacity-0">Already have an account?</a></p>
+            </form>
+
+
+{%endblock%}
