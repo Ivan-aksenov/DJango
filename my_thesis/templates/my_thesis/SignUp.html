@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% block title%} Sign Up {% endblock  %}
+{% extends "components/NavBar.html" %}{% block title%} Sign Up {% endblock  %}
 
 {% block head %} {% endblock %}
 
@@ -11,7 +11,7 @@
 </div>
 <p> Sign in with your HydroFlow account </p>
             <form class="row g-3 needs-validation" novalidate>
-                <div class="col-5 position-relative">
+                  <div class="col-5 position-relative">
                     <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" required>
                   </div>
@@ -31,10 +31,28 @@
                     <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Confirm Password" required>
                   </div>
-                  <p>By clicking Sign Up, you agree to our<a href="#" class="link-primary link-offset-2 link-underline link-underline-opacity-0"> Terms and conditions</a></p>
-                  <a class="btn btn-primary" href="#" role="button">Sign Up</a>
+                  <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <p>By clicking Sign Up, you agree to our<a href="#" id="myBtn"> Terms and conditions</a></p> </div>
+                  <a class="btn btn-primary" href="#">Sign Up</a>
                   <p><a href="{% url 'SignIn' %}" class="link-primary link-offset-2 link-underline link-underline-opacity-0">Already have an account?</a></p>
+
             </form>
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Terms and Conditions</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 {%endblock%}
