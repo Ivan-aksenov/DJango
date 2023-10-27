@@ -28,29 +28,26 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav m-auto gap-3">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">WHAT WE DO?</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">FEATURES</a>
+                    <a class="nav-link active" href="{% url 'Features' %}">FEATURES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">INSIGHTS</a>
+                    <a class="nav-link active" href="{% url 'Insights' %}">INSIGHTS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">ABOUT US</a>
+                    <a class="nav-link active" href="{% url 'AboutUs' %}">ABOUT US</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">CONTACT</a>
+                    <a class="nav-link active" href="{% url 'Contact' %}">CONTACT</a>
                   </li>
-                  <a class="btn btn-warning fw-bold text-light" href="{% url 'SignIn' %}" role="button">SIGN IN</a>
+                  <a class="btn btn-warning fw-bold text-light" href="{% url 'SignIn' %}">SIGN IN</a>
                 </ul>
               </div>
             </nav>
-
-
-
 
             <div class="container">{%block content%} {%endblock%}</div>
 
