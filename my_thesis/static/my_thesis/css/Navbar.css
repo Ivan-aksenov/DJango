@@ -1,0 +1,32 @@
+#SignIn {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #FF8A00; 
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+}
+
+#WhatWeDo {
+    color: #18468B;
+    font-weight: 600;
+}
+
+#Features {
+    color: #18468B;
+    font-weight: 600;
+}
+
+#Insights {
+    color: #18468B;
+    font-weight: 600;
+}
+
+#AboutUs {
+    color: #18468B;
+    font-weight: 600;
+}
+
+#Contact {
+    color: #18468B;
+    font-weight: 600;
+}
