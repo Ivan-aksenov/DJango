@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-
 {% load static %}
+
+<!DOCTYPE html>
 
 <html lang="en">
     <head>
@@ -17,6 +17,7 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="{% static 'my_thesis/css/NavBar.css' %}">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,21 +31,21 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav m-auto gap-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">WHAT WE DO?</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'Home' %}" id="WhatWeDo">WHAT WE DO?</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'Features' %}">FEATURES</a>
+                    <a class="nav-link active" href="{% url 'Features' %}" id="Features">FEATURES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'Insights' %}">INSIGHTS</a>
+                    <a class="nav-link active" href="{% url 'Insights' %}" id="Insights">INSIGHTS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'AboutUs' %}">ABOUT US</a>
+                    <a class="nav-link active" href="{% url 'AboutUs' %}" id="AboutUs">ABOUT US</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'Contact' %}">CONTACT</a>
+                    <a class="nav-link active" href="{% url 'Contact' %}" id="Contact">CONTACT</a>
                   </li>
-                  <a class="btn btn-warning fw-bold text-light" href="{% url 'SignIn' %}">SIGN IN</a>
+                  <a class="btn" href="{% url 'SignIn' %}" id="SignIn">SIGN IN</a>
                 </ul>
               </div>
             </nav>

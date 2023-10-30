@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 
@@ -9,18 +11,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'my_thesis/css/Home.css' %}">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>HydroFlow <br> Energy Flows Where <br> Water Goes</h1>
-        <p> We create game-changing jewels of sustainable growth and <br> development, water is life, but electricity is our heartbeat</p>
+    <!-- FIRST CONTAINER -->
+    <div class="container p-5 mb-2" id="FirstBox">
+        <h1 id="BoxOne_FirstLine">HydroFlow</h1>
+        <h1 id="BoxOne_SecondLine">Energy Flows <br> Where Water Goes</h1>
+        <p id="BoxOne_TextOne"> We create game-changing jewels of sustainable growth and <br> development, water is life, but electricity is our heartbeat.</p>
     </div>
 
+    <!-- SECOND CONTAINER -->
+    <div class="container p-5 mb-2" id="SecondBox">
+        <h1 id="SecondBox_HeadOne">We Design, Install<br> and Change Customer<br> Conservation...</h1>
+        <p id="SecondBox_TextOne"> We design our device in the highest form  for<br> your home. Within billions of data, our<br> Engineers will make sure your data is<br>
+            accurate, efficient, and secure at all times.<br> Harness the craft and experience its feature...</p> <br>
+        <a class="btn" href="{% url 'Features' %}" id="Home_Features">FEATURES</a>
+    </div>
 
+    <!-- THIRD CONTAINER -->
+    <div class="container p-5 mb-2" id="ThirdBox">
+        <h1 id="ThirdBox_HeadOne">Better Insights</h1>
+        <p id="ThirdBox_TextOne"> We believe in harnessing the power of water and electricity<br> to improve and deliver every household needs. 
+            Its a real<br> game-changer that helps you navigate and generate, see<br> how we can help you for your everyday needs.</p> <br>
+        <a class="btn" href="{% url 'Insights' %}" id="Home_Insights">INSIGHTS</a>
+    </div>
 
-
+    <!-- FORTH CONTAINER -->
+    <div class="container p-5 mb-2" id="ForthBox">
+        <h1 id="ForthBox_HeadOne">True Innovation</h1>
+        <p id="ForthBox_TextOne"> We are the researchers, inventors and creator of HydroFlow,<br> and we believe in unlocking the limitless potential 
+            of growth<br> and energy transforming life as we know it.</p> <br>
+        <a class="btn" href="{% url 'AboutUs' %}" id="Home_AboutUs">About Us</a>
+    </div>
 
 </body>
 </html>
