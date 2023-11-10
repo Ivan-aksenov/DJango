@@ -1,8 +1,13 @@
-/* FIRST CONTAINER */
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
+/* FIRST CONTAINER */
 #FirstBox{
     background-color: #15527D;
-  }
+}
 
 #BoxOne_FirstLine{
     color: #FFFFFF;
@@ -22,10 +27,19 @@
     font-size: 24px;
 }
 
+.flex{
+    display: flex;
+}
+
+.BoxOne_Image1{
+    margin-left: auto;
+}
+
 /* SECOND CONTAINER */
 
 #SecondBox{
     background-color: #FFFFFF;
+    background-size: cover;
 }
 
 #SecondBox_HeadOne{
@@ -53,6 +67,7 @@
 
 #ThirdBox{
     background-color: #FF8A00;
+    background-size: cover;
 }
 
 #ThirdBox_HeadOne{
@@ -80,6 +95,7 @@
 
 #ForthBox{
     background-color: #FFFFFF;
+    background-size: cover;
 }
 
 #ForthBox_HeadOne{
@@ -104,4 +120,3 @@
 }
 
 /* FIFTH CONTAINER */
-

@@ -1,3 +1,14 @@
+#Logo {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: -30px;
+}
+
+#NavBar {
+    margin-top: -15mm;
+    margin-bottom: -20mm;
+}
+
 #SignIn {
     color: #FFFFFF;
     font-weight: bold;
