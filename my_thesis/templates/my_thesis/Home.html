@@ -25,7 +25,7 @@
                         <h1 id="BoxOne_SecondLine">Energy Flows <br> Where Water Goes</h1>
                         <p id="BoxOne_TextOne"> We create game-changing jewels of sustainable growth and <br> development, water is life, but electricity is our heartbeat.</p>
                 </div>
-                <img class="BoxOne_Image1" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
+                <img class="BoxOne_Image1" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}" width="600">
         </div>
 </section>
 
@@ -45,14 +45,13 @@
 <!-- THIRD CONTAINER -->
 <section class="p-5" id="ThirdBox">
         <div class="flex3">
-                <!--DITO YONG MAY 3RD PICTURE SHIZZ--> <img class="BoxOne_Image3" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
+                <!--DITO YONG MAY 3RD PICTURE SHIZZ--> <img class="BoxOne_Image3" src="{% static 'my_thesis/images/home/BOX3_IMAGE.png' %}">
                 <div class="TextBox3">
                         <h1 id="ThirdBox_HeadOne">Better Insights</h1>
                         <p id="ThirdBox_TextOne"> We believe in harnessing the power of water and electricity<br> to improve and deliver every household needs. 
                         Its a real<br> game-changer that helps you navigate and generate, see<br> how we can help you for your everyday needs.</p> <br>
                         <a class="btn" href="{% url 'Insights' %}" id="Home_Insights">INSIGHTS</a>
                 </div>
-                
         </div>
         
 </section>
@@ -66,10 +65,15 @@
                         of growth<br> and energy transforming life as we know it.</p> <br>
                         <a class="btn" href="{% url 'AboutUs' %}" id="Home_AboutUs">ABOUT US</a>
                 </div>
-                <!--DITO YONG MAY 4TH PICTURE SHIZZ--><img class="BoxOne_Image1" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
+                <!--DITO YONG MAY 4TH PICTURE SHIZZ--><img class="BoxOne_Image1" src="{% static 'my_thesis/images/home/BOX4_IMAGE.png' %}">
         </div>
         
 </section>
+
+<footer>
+        {% include 'components/footer.html' %}
+</footer>
+
 
 </body>
 </html>
