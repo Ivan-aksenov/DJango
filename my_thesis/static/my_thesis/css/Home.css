@@ -29,10 +29,17 @@ body{
 
 .flex{
     display: flex;
+    align-items: center;
+}
+
+.TextBox1{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .BoxOne_Image1{
     margin-left: auto;
+    margin-right: auto;
 }
 
 /* SECOND CONTAINER */
@@ -63,6 +70,23 @@ body{
     border-radius: 20px;
 }
 
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
+.BoxOne_Image2{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TextBox2{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* THIRD CONTAINER */
 
 #ThirdBox{
@@ -89,6 +113,23 @@ body{
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 20px;
+}
+
+.flex3{
+    display: flex;
+    align-items: center;
+}
+
+.BoxOne_Image3{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TextBox3{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* FORTH CONTAINER */
@@ -119,4 +160,17 @@ body{
     border-radius: 20px;
 }
 
-/* FIFTH CONTAINER */
+.flex4{
+    display: flex;
+    align-items: center;
+}
+
+.TextBox4{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BoxOne_Image4{
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -18,44 +18,58 @@
 <body>
 
 <!-- FIRST CONTAINER -->
-<section class="p-5 mb-2" id="FirstBox">
+<section class="p-5" id="FirstBox">
         <div class="flex">
-                <div class="textBox1">
-                <h1 id="BoxOne_FirstLine">HydroFlow</h1>
-                <h1 id="BoxOne_SecondLine">Energy Flows <br> Where Water Goes</h1>
-                <p id="BoxOne_TextOne"> We create game-changing jewels of sustainable growth and <br> development, water is life, but electricity is our heartbeat.</p>
+                <div class="TextBox1">
+                        <h1 id="BoxOne_FirstLine">HydroFlow</h1>
+                        <h1 id="BoxOne_SecondLine">Energy Flows <br> Where Water Goes</h1>
+                        <p id="BoxOne_TextOne"> We create game-changing jewels of sustainable growth and <br> development, water is life, but electricity is our heartbeat.</p>
                 </div>
-                <img class="BoxOne_Image1" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}" id="BoxOne_Image">
+                <img class="BoxOne_Image1" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
         </div>
 </section>
 
 <!-- SECOND CONTAINER -->
-<section class="p-5 mb-2 text-end" id="SecondBox">
-        <h1 id="SecondBox_HeadOne">We Design, Install<br> and Change Customer<br> Conservation...</h1>
-        <p id="SecondBox_TextOne"> We design our device in the highest form  for<br> your home. Within billions of data, our<br> Engineers will make sure your data is<br>
-            accurate, efficient, and secure at all times.<br> Harness the craft and experience its feature...</p> <br>
-        <a class="btn" href="{% url 'Features' %}" id="Home_Features">FEATURES</a>
+<section class="p-5" id="SecondBox">
+        <div class="flex2">
+                <!--DITO YONG MAY VIDEO SHIZZ--> <img class="BoxOne_Image2" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
+                <div class="TextBox2">
+                        <h1 id="SecondBox_HeadOne">We Design, Install<br> and Change Customer<br> Conservation...</h1>
+                        <p id="SecondBox_TextOne"> We design our device in the highest form  for<br> your home. Within billions of data, our<br> Engineers will make sure your data is<br>
+                        accurate, efficient, and secure at all times.<br> Harness the craft and experience its feature...</p> <br>
+                        <a class="btn" href="{% url 'Features' %}" id="Home_Features">FEATURES</a>
+                </div>
+        </div>
 </section>
 
 <!-- THIRD CONTAINER -->
-<section class="p-5 mb-2 text-center" id="ThirdBox">
-        <h1 id="ThirdBox_HeadOne">Better Insights</h1>
-        <p id="ThirdBox_TextOne"> We believe in harnessing the power of water and electricity<br> to improve and deliver every household needs. 
-            Its a real<br> game-changer that helps you navigate and generate, see<br> how we can help you for your everyday needs.</p> <br>
-        <a class="btn" href="{% url 'Insights' %}" id="Home_Insights">INSIGHTS</a>
+<section class="p-5" id="ThirdBox">
+        <div class="flex3">
+                <!--DITO YONG MAY 3RD PICTURE SHIZZ--> <img class="BoxOne_Image3" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
+                <div class="TextBox3">
+                        <h1 id="ThirdBox_HeadOne">Better Insights</h1>
+                        <p id="ThirdBox_TextOne"> We believe in harnessing the power of water and electricity<br> to improve and deliver every household needs. 
+                        Its a real<br> game-changer that helps you navigate and generate, see<br> how we can help you for your everyday needs.</p> <br>
+                        <a class="btn" href="{% url 'Insights' %}" id="Home_Insights">INSIGHTS</a>
+                </div>
+                
+        </div>
+        
 </section>
 
 <!-- FORTH CONTAINER -->
-<section class="p-5 mb-2" id="ForthBox">
-        <h1 id="ForthBox_HeadOne">True Innovation</h1>
-        <p id="ForthBox_TextOne"> We are the researchers, inventors and creator of HydroFlow,<br> and we believe in unlocking the limitless potential 
-            of growth<br> and energy transforming life as we know it.</p> <br>
-        <a class="btn" href="{% url 'AboutUs' %}" id="Home_AboutUs">ABOUT US</a>
+<section class="p-5" id="ForthBox">
+        <div class="flex4">
+                <div class="TextBox4">
+                        <h1 id="ForthBox_HeadOne">True Innovation</h1>
+                        <p id="ForthBox_TextOne"> We are the researchers, inventors and creator of HydroFlow,<br> and we believe in unlocking the limitless potential 
+                        of growth<br> and energy transforming life as we know it.</p> <br>
+                        <a class="btn" href="{% url 'AboutUs' %}" id="Home_AboutUs">ABOUT US</a>
+                </div>
+                <!--DITO YONG MAY 4TH PICTURE SHIZZ--><img class="BoxOne_Image1" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
+        </div>
+        
 </section>
-
-<footer>
-
-</footer>
 
 </body>
 </html>
