@@ -1,4 +1,4 @@
-#Logo {
+/* #Logo {
     position: relative;
     margin-top: 0px;
     margin-bottom: -30px;
@@ -7,6 +7,7 @@
 #NavBar {
     margin-top: -15mm;
     margin-bottom: -20mm;
+    font-family: 'Inter', sans-serif;
 }
 
 #SignIn {
@@ -15,29 +16,35 @@
     background-color: #FF8A00; 
     padding: 10px 30px 10px 30px;
     border-radius: 10px;
+    font-family: 'Inter', sans-serif;
 }
 
 #WhatWeDo {
     color: #18468B;
     font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
 
 #Features {
     color: #18468B;
     font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
 
 #Insights {
     color: #18468B;
     font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
 
 #AboutUs {
     color: #18468B;
     font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
 
 #Contact {
     color: #18468B;
     font-weight: 600;
-}
+    font-family: 'Inter', sans-serif;
+} */
