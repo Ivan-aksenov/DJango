@@ -1,4 +1,4 @@
-{% extends "components/NavBar.html" %} {% block title%} What We Do? {% endblock  %}
+{% extends "components/NavBar.html" %} {% block title%} {% load static %} What We Do? {% endblock  %}
 
 {% block content %}
 
@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link rel="icon" href="{% static 'my_thesis/images/home/LogoHydroFlow.png' %}" />
 </head>
 <style>
 body{
@@ -29,6 +30,7 @@ body{
 #FirstBox{
     background-color: #15527D;
     font-family: 'Inter', sans-serif;
+    margin-bottom: -48px;
 }
 
 #BoxOne_FirstLine{
@@ -57,6 +59,7 @@ body{
 .TextBox1{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .BoxOne_Image1{
@@ -229,7 +232,7 @@ body{
 <!-- SECOND CONTAINER -->
 <section class="p-5" id="SecondBox">
         <div class="flex2">
-                <!--DITO YONG MAY VIDEO SHIZZ--> <img class="BoxOne_Image2" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
+                <!-- SUBSTITUTE LANG ITO KASI WALA PA VIDEO--> <img class="BoxOne_Image2" src="{% static 'my_thesis/images/home/BOX1_IMAGE.png' %}">
                 <div class="TextBox2">
                         <h1 id="SecondBox_HeadOne">We Design, Install<br></h1>
                         <h1 id="SecondBox_HeadTwo">and Change Customer<br></h1>
