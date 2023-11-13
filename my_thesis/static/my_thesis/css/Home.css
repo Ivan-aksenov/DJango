@@ -1,12 +1,18 @@
-/* FIRST CONTAINER */
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
 
+/* FIRST CONTAINER */
 #FirstBox{
     background-color: #15527D;
-  }
+}
 
 #BoxOne_FirstLine{
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 64px;
 }
 
@@ -22,10 +28,26 @@
     font-size: 24px;
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.TextBox1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BoxOne_Image1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* SECOND CONTAINER */
 
 #SecondBox{
     background-color: #FFFFFF;
+    background-size: cover;
 }
 
 #SecondBox_HeadOne{
@@ -49,10 +71,28 @@
     border-radius: 20px;
 }
 
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
+.BoxOne_Image2{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TextBox2{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* THIRD CONTAINER */
 
 #ThirdBox{
     background-color: #FF8A00;
+    background-size: cover;
 }
 
 #ThirdBox_HeadOne{
@@ -76,10 +116,28 @@
     border-radius: 20px;
 }
 
+.flex3{
+    display: flex;
+    align-items: center;
+}
+
+.BoxOne_Image3{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TextBox3{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* FORTH CONTAINER */
 
 #ForthBox{
     background-color: #FFFFFF;
+    background-size: cover;
 }
 
 #ForthBox_HeadOne{
@@ -103,5 +161,17 @@
     border-radius: 20px;
 }
 
-/* FIFTH CONTAINER */
+.flex4{
+    display: flex;
+    align-items: center;
+}
 
+.TextBox4{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BoxOne_Image4{
+    margin-left: auto;
+    margin-right: auto;
+}
