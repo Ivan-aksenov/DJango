@@ -21,7 +21,15 @@
 </head>
 <style>
 
-/* SECOND CONTAINER */
+/* FIRST CONTAINER */
+
+.flex_main{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0;
+}
+
 .flex{
     display: flex;
     align-items: center;
@@ -31,16 +39,17 @@
 
 .BoxOne_Image2{
     display:block;
-    margin-left: 45px;
+    margin-left: -10px;
     margin-right: auto;
     margin-bottom: 100px;
-    width: 500px;
+    width: 550px;
 }
 
 .TextBox2{
     display:block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 80px;
 }
 
 #SIGNIN{
@@ -79,31 +88,91 @@
   margin-bottom: -20px;
 }
 
+.Blank{
+  margin-top: 180px;
+  margin-bottom: -80px;
+  border-top:1px solid
+}
+
+.textbot_1{
+  margin-top: 120px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 80px;
+  margin-right: auto;
+  
+}
+
+.Blue_textbot1{
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2895E3;
+  text-align: justify;
+}
+
+.textbot_2{
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  margin-left: 80px;
+  margin-right: auto;
+}
+
+.Blue_textbot2{
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #2895E3;
+  text-align: justify;
+}
+
 </style>
 
 <body>
-  
-<section class="p-5" id="FirstBox">
-  <div class="flex">
 
-          <div class="TextBox2">
-              <img class="BoxOne_Image2" src="{% static 'my_thesis/images/home/LogoHydroFlow.png' %}">
-              <p> Sign in with your HydroFlow account </p>
-              <form class="row g-3 needs-validation" novalidate>
-                  <div class="col-8 position-relative">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control form-control-lg EMAILADD" id="exampleFormControlInput1" placeholder="Email Address" required>
-                  </div>
-                  <div class="col-8 position-relative">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control form-control-lg PW" id="exampleFormControlInput1" placeholder="Password" required>
-                  </div>
-                    <p><a href="{% url 'SignUp' %}" id="SIGNUP_LINK" class="link-primary link-offset-2 link-underline link-underline-opacity-0">Don't have an account yet? Sign Up</a></p>
-                    <a class="btn btn-primary" id="SIGNIN" href="#" role="button">Sign In</a>
-              </form>
-          </div>
-  </div>
-</section>
+<div class="flex_main">
+  <img class="BoxOne_Image1 rounded float-start" src="{% static 'my_thesis/images/signin/SIGNUP_SIGNIN_BG.png' %}" width="2700px">
+
+  <section class="p-5" id="FirstBox">
+    <div class="flex">
+            <div class="TextBox2">
+                <img class="BoxOne_Image2" src="{% static 'my_thesis/images/home/LogoHydroFlow.png' %}">
+                <p> Sign in with your HydroFlow account </p>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-12 position-relative">
+                      <label for="exampleFormControlInput1" class="form-label"></label>
+                      <input type="text" class="form-control form-control-lg EMAILADD" id="exampleFormControlInput1" placeholder="Email Address" required>
+                    </div>
+                    <div class="col-12 position-relative">
+                      <label for="exampleFormControlInput1" class="form-label"></label>
+                      <input type="text" class="form-control form-control-lg PW" id="exampleFormControlInput1" placeholder="Password" required>
+                    </div>
+                      <p><a href="{% url 'SignUp' %}" id="SIGNUP_LINK" class="link-primary link-offset-2 link-underline link-underline-opacity-0">Don't have an account yet? Sign Up</a></p>
+                      <a class="btn btn-primary" id="SIGNIN" href="#" role="button">Sign In</a>
+                    <div class="textbot">
+
+                        <div class="Blank"></div>
+                        <div class="textbot_1">
+                          If your password has expired, please navigate<br>
+                          to <span class="Blue_textbot1" href="{% url 'SignUp' %}" id="SIGNUP_LINK" class="link-primary link-offset-2 link-underline link-underline-opacity-0"> <a href=""> HydroFlow Password Reset </a></span> to update your<br>
+                          password.<br></p>
+                        </div>
+
+                        <div class="textbot_2">
+                          If your unable to login, please use the<br>
+                          <a> <span class="Blue_textbot2" id="SIGNUP_LINK" class="link-primary link-offset-2 link-underline link-underline-opacity-0"> <a href=""> password reset tool </a></span></a> to reset your password,<br> 
+                          update an expired password, or unlock your<br>
+                          account.
+                        </div>
+                    </div>
+
+                    
+                </form>
+            </div>
+    </div>
+  </section>
+
+</div>
 
 </body>
 
