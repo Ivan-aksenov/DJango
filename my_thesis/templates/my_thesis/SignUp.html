@@ -19,36 +19,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <style>
 
-/* FIRST CONTAINER */
-
-#FirstBox{
-  margin-left: 900px;
-}
-
-.flex{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.BoxOne_Image2{
-    display:block;
-    margin-left: 30px;
-    margin-right: auto;
-    margin-bottom: 100px;
-    width: 500px;
-}
-
-.TextBox2{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#SIGNIN{
+  /* FIRST CONTAINER */
+  
+  .flex_main{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 0;
+  }
+  
+  .flex{
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .BoxOne_Image2{
+      display:block;
+      margin-left: 0px;
+      margin-right: auto;
+      margin-bottom: 100px;
+      width: 550px;
+  }
+  
+  .TextBox2{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 80px;
+  }
+  
+  #SIGNIN{
     background-color: #2895E3;
     color: #FFFFFF;
     font-size: 16px;
@@ -58,7 +63,7 @@
     height:50px;
     width:100px;
     margin-top: 2px;
-    margin-left: 300px;
+    margin-left: 230px;
 }
 
 .FN{
@@ -67,6 +72,7 @@
     font-size: 15px;
     font-weight: 600;
     margin-bottom: -30px;
+    margin-left: 40px;
 }
 
 .LN{
@@ -75,6 +81,7 @@
     font-size: 15px;
     font-weight: 600;
     margin-bottom: -30px;
+    margin-left: 40px;
 }
 
 .EMAILADD{
@@ -83,6 +90,7 @@
     font-size: 15px;
     font-weight: 600;
     margin-bottom: -30px;
+    margin-left: 40px;
 }
 
 .PW{
@@ -90,6 +98,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 600;
+    margin-left: 40px;
 }
 
 .CPW{
@@ -98,6 +107,7 @@
     font-size: 15px;
     font-weight: 600;
     margin-top: -30px;
+    margin-left: 40px;
 }
 
 .TERMS_CONDITIONS{
@@ -105,6 +115,7 @@
   font-weight: 400;
   color: black;
   font-family: 'Inter';
+  margin-left: 42px;
 }
 
 #SIGNIN_LINK{
@@ -113,46 +124,51 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: -20px;
-  margin-left: 250px;
+  margin-left: 175px;
 }
-
-</style>
-
-<body>
   
-<section class="p-5" id="FirstBox">
-  <div class="flex">
-
-          <div class="TextBox2">
-              <img class="BoxOne_Image2" src="{% static 'my_thesis/images/home/LogoHydroFlow.png' %}">
-              <form class="row g-3 needs-validation" novalidate>
-                  <div class="col-sm-5 position-relative">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control form-control-lg FN" id="exampleFormControlInput1" placeholder="First Name" required>
-                  </div>
-                  <div class="col-sm-5 position-relative">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control form-control-lg LN" id="exampleFormControlInput1" placeholder="Last Name" required>
-                  </div>
-                  <div class="col-10 position-relative">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control form-control-lg EMAILADD" id="exampleFormControlInput1" placeholder="Email Address" required>
-                  </div>
-                  <div class="col-10 position-relative">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control form-control-lg PW" id="exampleFormControlInput1" placeholder="Password" required>
-                  </div>
-                  <div class="col-10 position-relative">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control form-control-lg CPW" id="exampleFormControlInput1" placeholder="Confirm Password" required>
-                  </div>
-                  <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <p class="TERMS_CONDITIONS">By clicking Sign Up, you agree to our<a href="#" id="myBtn"> Terms and conditions</a></p> </div>
-                  <a class="btn btn-primary" id="SIGNIN" href="#" role="button">Sign In</a>
-                  <p><a href="{% url 'SignIn' %}" id="SIGNIN_LINK" class="link-primary link-offset-2 link-underline link-underline-opacity-0">Already have an account?</a></p>
-              </form>
-          </div>
+  </style>
+  
+  <body>
+  
+  <div class="flex_main">
+    <img class="BoxOne_Image1 rounded float-start" src="{% static 'my_thesis/images/signin/SIGNUP_SIGNIN_BG.png' %}" width="4680">
+  
+    <section class="p-5" id="FirstBox">
+      <div class="flex">
+        <div class="TextBox2">
+          <img class="BoxOne_Image2" src="{% static 'my_thesis/images/home/LogoHydroFlow.png' %}">
+          <form class="row g-3 needs-validation" novalidate>
+              <div class="col-sm-5 position-relative">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control form-control-lg FN" id="exampleFormControlInput1" placeholder="First Name" required>
+              </div>
+              <div class="col-sm-5 position-relative">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control form-control-lg LN" id="exampleFormControlInput1" placeholder="Last Name" required>
+              </div>
+              <div class="col-10 position-relative">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control form-control-lg EMAILADD" id="exampleFormControlInput1" placeholder="Email Address" required>
+              </div>
+              <div class="col-10 position-relative">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control form-control-lg PW" id="exampleFormControlInput1" placeholder="Password" required>
+              </div>
+              <div class="col-10 position-relative">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control form-control-lg CPW" id="exampleFormControlInput1" placeholder="Confirm Password" required>
+              </div>
+              <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <p class="TERMS_CONDITIONS">By clicking Sign Up, you agree to our<a href="#" id="myBtn"> Terms and conditions</a></p> </div>
+              <a class="btn btn-primary" id="SIGNIN" href="#" role="button">Sign Up</a>
+              <p><a href="{% url 'SignIn' %}" id="SIGNIN_LINK" class="link-primary link-offset-2 link-underline link-underline-opacity-0">Already have an account?</a></p>
+          </form>
+      </div>
+      </div>
+    </section>
+  
   </div>
-</section>
+
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
