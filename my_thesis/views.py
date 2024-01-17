@@ -16,14 +16,8 @@ def SignIn(request):
 def SignUp(request):
     return render(request,"my_thesis/SignUp.html")
 
-def Features(request):
-    return render(request, "my_thesis/Features.html")
+def Features_Insights(request):
+    return render(request, "my_thesis/Features_Insights.html")
 
-def Insights(request):
-    return render(request, "my_thesis/Insights.html")
-
-def AboutUs(request):
-    return render(request, "my_thesis/AboutUs.html")
-
-def Contact(request):
-    return render(request, "my_thesis/Contact.html")
+def AboutUs_Contact(request):
+    return render(request, "my_thesis/AboutUs_Contact.html")

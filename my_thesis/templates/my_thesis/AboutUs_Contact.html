@@ -1,4 +1,4 @@
-{% extends "components/NavBar.html" %} {% block title%} About Us {% endblock  %}
+{% extends "components/NavBar.html" %} {% block title%} About Us & Contact {% endblock  %}
 
 {% block content %}
 
@@ -17,6 +17,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
+<script>
+    function scrollToContact() {
+        var element = document.getElementById('ThirdBox');
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
 
 <style>
 
