@@ -21,3 +21,6 @@ def Features_Insights(request):
 
 def AboutUs_Contact(request):
     return render(request, "my_thesis/AboutUs_Contact.html")
+
+def Client_Dash(request):
+    return render(request, "my_thesis/Client_Dash.html")
